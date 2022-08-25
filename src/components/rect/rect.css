@@ -1,0 +1,52 @@
+.box {
+  overflow: auto;
+  /* background-color: #7e017e;
+  border-radius: 6px;
+  border: 5px solid black; */
+  background-color: #7e017e;
+  transform: translate(0, 0);
+  cursor: move;
+  width: 100%;
+  height: 100%;
+}
+
+.rect {
+  position: absolute;
+  background-color: #7e017e;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 6px;
+  border: 5px solid black;
+  overflow: hidden;
+}
+
+.resizer {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  z-index: 2;
+}
+
+.resizer.nw {
+  top: -1px;
+  left: -1px;
+  cursor: nw-resize;
+}
+
+.resizer.ne {
+  top: -1px;
+  right: -1px;
+  cursor: ne-resize;
+}
+
+.resizer.sw {
+  bottom: -1px;
+  left: -1px;
+  cursor: sw-resize;
+}
+
+.resizer.se {
+  bottom: -1px;
+  right: -1px;
+  cursor: se-resize;
+}
